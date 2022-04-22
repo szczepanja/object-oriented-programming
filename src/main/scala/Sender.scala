@@ -6,9 +6,9 @@ case class Sender(header: String) {
 
 object Sender extends App {
 
-  //  val header = readLine("Define header: ")
+  val header = readLine("Define header: ")
   val message = readLine("Define message: ")
-  val sender = Sender("header")
+  val sender = Sender(header)
 
   println(sender.send(message))
 
