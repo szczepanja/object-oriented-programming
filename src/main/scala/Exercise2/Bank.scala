@@ -1,5 +1,7 @@
 package Exercise2
 
-case class Bank(account: Account) {
+case class Bank(accounts: Array[Account]) {
+
+  def transfer(howMuch: Int, fromAccount: Account, toAccount: Account): Account = Account(50, 2)
 
 }
