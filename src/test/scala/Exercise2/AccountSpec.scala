@@ -10,9 +10,14 @@ class AccountSpec extends AnyFlatSpec with should.Matchers {
   val account2: Account = Account(22000, 2)
 
   "account.print" should "print a statement for an account" in {
-
     account1.print shouldBe "balance: 10000, number: 1"
     account2.print shouldBe "balance: 22000, number: 2"
+  }
+
+
+  "account.close" should "close an account (which is to make a balance zero)" in {
+    account1.closeAccount shouldBe Account(0, 1)
+    account2.closeAccount shouldBe Account(0, 2)
   }
 
 }
