@@ -5,7 +5,7 @@ import org.scalatest.matchers._
 
 class LoggerSpec extends AnyFlatSpec with should.Matchers {
 
-  behavior of "Exercise1.Logger"
+  behavior of "Logger"
 
   it should "print message with given prefix of +" in {
     val prefix_+ = Logger("+")

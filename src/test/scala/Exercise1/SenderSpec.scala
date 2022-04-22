@@ -5,7 +5,7 @@ import org.scalatest.matchers._
 
 class SenderSpec extends AnyFlatSpec with should.Matchers {
 
-  behavior of "Exercise1.Sender"
+  behavior of "Sender"
 
   val sender: Sender = Sender("header")
 
