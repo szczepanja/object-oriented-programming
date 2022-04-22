@@ -1,11 +1,11 @@
-import org.scalatest._
-import flatspec._
-import matchers._
-import org.scalatest.exceptions.TestFailedException
+package Exercise1
+
+import org.scalatest.flatspec._
+import org.scalatest.matchers._
 
 class SenderSpec extends AnyFlatSpec with should.Matchers {
 
-  behavior of "Sender"
+  behavior of "Exercise1.Sender"
 
   val sender: Sender = Sender("header")
 

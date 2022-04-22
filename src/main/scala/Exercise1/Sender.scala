@@ -1,3 +1,5 @@
+package Exercise1
+
 import scala.io.StdIn.readLine
 
 case class Sender(header: String) {
