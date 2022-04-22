@@ -9,7 +9,7 @@ class LoggerSpec extends AnyFlatSpec with should.Matchers {
   it should "print message with given prefix of +" in {
     val prefix_+ = Logger("+")
     prefix_+.print("message") shouldBe ("+ message")
-    prefix_+.print("another: message") shouldBe ("+ another message")
+    prefix_+.print("another message") shouldBe ("+ another message")
 
   }
 

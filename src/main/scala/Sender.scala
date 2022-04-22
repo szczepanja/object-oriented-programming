@@ -10,6 +10,6 @@ object Sender extends App {
   val message = readLine("Define message: ")
   val sender = Sender(header)
 
-  println(sender.send(message))
+  sender.send(message)
 
 }

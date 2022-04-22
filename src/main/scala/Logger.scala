@@ -5,7 +5,7 @@ object Logger extends App {
   val prefix = readLine("Define prefix: ")
   val msg = readLine("Define message: ")
   val logger = Logger(prefix)
-  println(logger.print(msg))
+  logger.print(msg)
 
 }
 
