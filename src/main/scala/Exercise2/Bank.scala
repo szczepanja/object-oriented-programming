@@ -1,7 +1,19 @@
 package Exercise2
 
-case class Bank(accounts: Array[Account]) {
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
-  def transfer(howMuch: Int, fromAccount: Account, toAccount: Account): Account = Account(50, 2)
+class Bank {
 
+  var accounts: ArrayBuffer[Account] = ArrayBuffer.empty[Account]
+
+  def openAccount(newAccount: Account): mutable.Seq[Account] = accounts += newAccount
+
+}
+
+object Main extends App {
+
+  val mBank = new Bank
+
+  println(mBank.openAccount(Account(0, 1)))
 }
