@@ -3,6 +3,8 @@ package Exercise2
 import org.scalatest.flatspec._
 import org.scalatest.matchers._
 
+import scala.collection.mutable.ArrayBuffer
+
 class BankSpec extends AnyFlatSpec with should.Matchers {
 
   val account1: Account = Account(0, 1)
