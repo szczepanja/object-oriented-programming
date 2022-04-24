@@ -14,10 +14,4 @@ class AccountSpec extends AnyFlatSpec with should.Matchers {
     account2.print shouldBe "balance: 22000, number: 2"
   }
 
-
-  "account.close" should "close an account (which is to make a balance zero)" in {
-    account1.closeAccount shouldBe Account(0, 1)
-    account2.closeAccount shouldBe Account(0, 2)
-  }
-
 }

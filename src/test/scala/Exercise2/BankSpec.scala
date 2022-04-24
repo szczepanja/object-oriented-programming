@@ -20,4 +20,13 @@ class BankSpec extends AnyFlatSpec with should.Matchers {
   it should "open bank account with balance 0 and number 3" in {
     bank.openAccount(account3)
   }
+  "bank.closeAccount" should "close bank account number 1" in {
+    bank.closeAccount(account1)
+  }
+  it should "close bank account number 2" in {
+    bank.closeAccount(account2)
+  }
+  it should "close bank account number 3" in {
+    bank.closeAccount(account3)
+  }
 }

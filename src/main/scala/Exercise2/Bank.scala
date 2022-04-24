@@ -9,11 +9,15 @@ class Bank {
 
   def openAccount(newAccount: Account): mutable.Seq[Account] = accounts += newAccount
 
+  def closeAccount(closeAccount: Account): mutable.Seq[Account] = accounts -= closeAccount
+
 }
 
 object Main extends App {
 
-  val mBank = new Bank
+  val bank = new Bank
 
-  println(mBank.openAccount(Account(0, 1)))
+  println(bank.openAccount(Account(0, 1)))
+  println(bank.closeAccount(Account(0, 1)))
+  println(bank.accounts)
 }
