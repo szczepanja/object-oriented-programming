@@ -12,12 +12,3 @@ class Bank {
   def closeAccount(closeAccount: Account): mutable.Seq[Account] = accounts -= closeAccount
 
 }
-
-object Main extends App {
-
-  val bank = new Bank
-
-  println(bank.openAccount(Account(0, 1)))
-  println(bank.closeAccount(Account(0, 1)))
-  println(bank.accounts)
-}
